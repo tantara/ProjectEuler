@@ -1,14 +1,12 @@
-def fibonacci():
-	a = 1
-	b = 1
-	while 1:
-		yield a
-		a, b = a + b, a
-
-N = 4000000
+N=4000000
 sum = 0
-for i, fi in enumerate(fibonacci()):
-	if fi > N: break
+
+fi = 0
+for i in range(10)
+	if i == 1: fi = 1
+	elif i == 2: fi = 2
+	else: fi = fi + i
 	if fi % 2 == 0: sum += fi
+	print sum
 
 print sum
